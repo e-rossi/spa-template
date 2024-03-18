@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# This is a template SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template will be used for future projects to get started quickly with a familiar stack
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite
+- React
+- Typescript
+- Tailwind
+- ESLint
+- Prettier
 
-## Expanding the ESLint configuration
+## Next steps
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Implement [React Router](https://reactrouter.com/en/main/start/tutorial)
+- Choose and implement a Tailwind component library [Material Tailwind](https://www.material-tailwind.com/docs/react/guide/vite) maybe?
+- Implement [AWS Amplify](https://docs.amplify.aws/javascript/deploy-and-host/frameworks/deploy-vite-site/) or [Google Firebase](https://vitejs.dev/guide/static-deploy#google-firebase) and setup a pipeline to deploy the app
+- Experiment with auth, analytics, logging, observability and all that
 
-- Configure the top-level `parserOptions` property like this:
+## What about tests?
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+No.
