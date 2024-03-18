@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import { Button } from "@material-tailwind/react";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -16,10 +17,13 @@ export default function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className=" border-2">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className="flex flex-col m-8 gap-6">
+        <Button
+          className="w-fit self-center"
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
-        </button>
+        </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
